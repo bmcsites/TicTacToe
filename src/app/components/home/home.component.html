@@ -1,0 +1,7 @@
+<div class="game-container">
+  <h3>Player {{ this.playerTurn ? '2' : '1' }} Turn</h3>
+  <div class="game-box row" *ngIf="data">
+    <div class="col-4" *ngFor="let box of data" (click)="markMe(box)"><span>{{ box.value }}</span></div>
+  </div>
+</div>
+

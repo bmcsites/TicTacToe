@@ -1,0 +1,32 @@
+.game-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  h3{
+    position: absolute;
+    top: 10px;
+  }
+  .game-box {
+    width: 70vh;
+    height: 70vh;
+    max-width: 600px;
+    max-height: 600px;
+    background: red;
+    .col-4 {
+      border: 1px solid;
+      padding: 0;
+      span {
+        position: absolute;
+        font-size: 38vh;
+        line-height: 0.3em;
+        text-align: center;
+        width: 100%;
+        overflow: hidden;
+        height: 100%;
+      }
+    }
+  }
+}
+
