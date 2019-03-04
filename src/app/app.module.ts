@@ -6,14 +6,16 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { HomeComponent } from '@components/home/home.component';
-import { HttpService } from '@services/http.service';
+import { StatusModalComponent } from '@components/home/status-modal/status-modal.component';
 import { HttpClientModule } from '@angular/common/http';
-import { CommonModule } from '@angular/common'
+import { CommonModule } from '@angular/common';
+import { TttBoxService } from '@services/ttt-box.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    StatusModalComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +25,7 @@ import { CommonModule } from '@angular/common'
     HttpClientModule,
     CommonModule
   ],
-  providers: [HttpService],
+  providers: [TttBoxService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

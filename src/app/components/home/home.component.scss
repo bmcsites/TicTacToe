@@ -13,18 +13,24 @@
     height: 70vh;
     max-width: 600px;
     max-height: 600px;
-    background: red;
+    background: #f9ffbf;
     .col-4 {
       border: 1px solid;
       padding: 0;
+      &.win-box{
+        background: #03ff19;
+      }
       span {
         position: absolute;
-        font-size: 38vh;
-        line-height: 0.3em;
+        font-size: 34vh;
+        line-height: 33%;
         text-align: center;
         width: 100%;
         overflow: hidden;
         height: 100%;
+        vertical-align: middle;
+        max-width: 200px;
+        max-height: 200px;
       }
     }
   }

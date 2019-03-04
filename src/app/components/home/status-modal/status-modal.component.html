@@ -1,0 +1,8 @@
+<ng-template #statusModal let-c="close" let-d="dismiss" style="width: auto">
+  <div class="content-wrapper" *ngIf="winObj">
+    <div class="modal-body" #modalBody>
+      <h3>{{ winObj }}</h3>
+      <button class="btn btn-info" (click)="resetBoard()">Start a New Game.</button>
+    </div>
+  </div>
+</ng-template>
